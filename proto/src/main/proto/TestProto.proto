@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package io.skpaik.proto;
+
+message ProtoData {
+    bytes data = 1; /*Data from meshPeer*/
+    int32 type = 2; /*Type of Data*/
+}
+
+message ProtoPeer {
+    string peerId = 1; /*MeshPeer Id*/
+    int32 state = 2; /*MeshPeer state*/
+}

@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package io.lib.proto;
+
+message Data {
+    bytes data = 1; /*Data from meshPeer*/
+    int32 type = 2; /*Type of Data*/
+    MeshPeer meshPeer = 3; /*MeshPeer of data*/
+}
+
+message MeshPeer {
+    string peerId = 1; /*MeshPeer Id*/
+    int32 state = 2; /*MeshPeer state*/
+}
